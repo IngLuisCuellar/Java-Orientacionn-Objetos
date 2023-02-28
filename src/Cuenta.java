@@ -12,8 +12,10 @@ class Cuenta {
 	int numero;
 	String titular;
 	
-	void depositar(double valor){//El dinero que se va agregar a la cuenta
-		
+	public void depositar(double saldo){//El dinero que se va agregar a la cuenta
+		this.saldo = this.saldo + saldo;
+		// This.saldo es el saldo de este objeto (Cuenta), por otro lado, saldo es el parámetro
+		//que le ingresa
 	}
 
 }
