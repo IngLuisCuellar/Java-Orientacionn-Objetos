@@ -6,5 +6,8 @@ public class pruebaMetodos {
 		miCuenta.depositar(1500);
 		
 		System.out.println(miCuenta.saldo);
+		
+		miCuenta.retirar(300);
+		System.out.println(miCuenta.saldo);
 	}
 }
