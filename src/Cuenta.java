@@ -11,5 +11,9 @@ class Cuenta {
 	int agencia;
 	int numero;
 	String titular;
+	
+	void depositar(double valor){//El dinero que se va agregar a la cuenta
+		
+	}
 
 }
