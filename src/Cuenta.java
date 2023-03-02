@@ -10,7 +10,7 @@ class Cuenta {
 	double saldo;
 	int agencia;
 	int numero;
-	Cliente titular; //Se referencia con el objeto tipo Cliente
+	Cliente titular = new Cliente(); //Se referencia con el objeto tipo Cliente
 	
 	
 	//Void --> No retorna valor
