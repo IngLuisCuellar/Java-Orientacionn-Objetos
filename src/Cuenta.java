@@ -10,7 +10,8 @@ class Cuenta {
 	double saldo;
 	int agencia;
 	int numero;
-	String titular;
+	Cliente titular; //Se referencia con el objeto tipo Cliente
+	
 	
 	//Void --> No retorna valor
 	public void depositar(double saldo){//El dinero que se va agregar a la cuenta
