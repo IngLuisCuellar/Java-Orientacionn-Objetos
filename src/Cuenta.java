@@ -7,7 +7,7 @@
 
 class Cuenta {
 	
-	double saldo;
+	private double saldo;
 	int agencia;
 	int numero;
 	Cliente titular = new Cliente(); //Se referencia con el objeto tipo Cliente
@@ -37,6 +37,10 @@ class Cuenta {
 			return true;
 		}
 		return false;
+	}
+	
+	public double getSaldo() {
+		return this.saldo;
 	}
 
 }
