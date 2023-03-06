@@ -1,7 +1,7 @@
 // Referencia, este va ser el titular
 public class Cliente {
 	
-	String nombre;
-	String documento;
-	String telefono;
+	private String nombre;
+	private String documento;
+	private String telefono;
 }
