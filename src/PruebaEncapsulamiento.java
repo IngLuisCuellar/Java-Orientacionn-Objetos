@@ -4,7 +4,13 @@ public class PruebaEncapsulamiento {
 		Cuenta cuenta = new Cuenta();
 		
 		Cliente cliente = new Cliente();
-		cliente.documento = "1200";
+		cliente.setNombre("Luis");
+		cliente.setDocumento("2315361");
+		
+		cuenta.setTitular(cliente);
+		
+		System.out.println(cliente.getNombre());
+		System.out.println(cuenta.getTitular().getNombre());
 		
 	}
 }

@@ -7,12 +7,12 @@ public class PruebaReferenciaTitular {
 		
 		cuentaDeLuis.titular = new Cliente();
 		
-		cuentaDeLuis.titular.nombre = "Luis Cuellar";
-		cuentaDeLuis.titular.documento = "1000010001";
-		cuentaDeLuis.titular.telefono = "44444444444";
+		cuentaDeLuis.titular.setNombre("Luis Cuellar");
+		cuentaDeLuis.titular.setDocumento("1000010001");
+		cuentaDeLuis.titular.setTelefono("44444444444");
 		
-		System.out.println(cuentaDeLuis.titular.nombre);
-		System.out.println(cuentaDeLuis.titular.documento);
+		System.out.println(cuentaDeLuis.getTitular().getNombre());
+		System.out.println(cuentaDeLuis.getTitular().getDocumento());
 		
 	}
 }
