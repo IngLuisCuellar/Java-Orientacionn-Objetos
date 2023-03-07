@@ -10,8 +10,17 @@ class Cuenta {
 	private double saldo;
 	private int agencia;
 	private int numero;
-	Cliente titular = new Cliente(); //Se referencia con el objeto tipo Cliente
+	private Cliente titular = new Cliente(); //Se referencia con el objeto tipo Cliente
 	
+	//Este constructor hace que se deba dar el atributo agencia al hacer una new Cuenta
+	public Cuenta(int agencia) {
+		if(agencia < 0) {
+			System.out.println("No se permite 0");
+			this.agencia = 1;
+		} else {
+			this.agencia = agencia;
+		}
+	}
 	
 	//Void --> No retorna valor
 	public void depositar(double saldo){//El dinero que se va agregar a la cuenta
@@ -41,12 +50,6 @@ class Cuenta {
 	
 	public double getSaldo() {
 		return this.saldo;
-	}
-	
-	public void setAgencia(int agencia) {
-		if(agencia > 0) {
-			this.agencia = agencia;
-		}
 	}
 	
 	public int getAgencia() {
