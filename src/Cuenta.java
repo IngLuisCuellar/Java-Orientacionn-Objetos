@@ -12,6 +12,7 @@ class Cuenta {
 	private int numero;
 	private Cliente titular = new Cliente(); //Se referencia con el objeto tipo Cliente
 	
+	private static int total = 0; //Static hace que la variable sea de la clase, mas no de la instancia
 	//Este constructor hace que se deba dar el atributo agencia al hacer una new Cuenta
 	public Cuenta(int agencia) {
 		if(agencia < 0) {
@@ -20,6 +21,8 @@ class Cuenta {
 		} else {
 			this.agencia = agencia;
 		}
+		total++; //Permite llevar el conteo del numero de cuentas que se han creado
+		System.out.println("Se han creado "+total+" cuentas en total");
 	}
 	
 	//Void --> No retorna valor
