@@ -14,6 +14,11 @@ class Cuenta {
 	
 	private static int total = 0; //Static hace que la variable sea de la clase, mas no de la instancia
 	//Este constructor hace que se deba dar el atributo agencia al hacer una new Cuenta
+	
+	public static int getTotal() {
+		return total;
+	}
+
 	public Cuenta(int agencia) {
 		if(agencia < 0) {
 			System.out.println("No se permite 0");
@@ -22,7 +27,7 @@ class Cuenta {
 			this.agencia = agencia;
 		}
 		total++; //Permite llevar el conteo del numero de cuentas que se han creado
-		System.out.println("Se han creado "+total+" cuentas en total");
+		System.out.println("Se han creado " + total + " cuentas en total");
 	}
 	
 	//Void --> No retorna valor
